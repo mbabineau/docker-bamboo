@@ -35,5 +35,6 @@ RUN cd $BAMBOO_SRC_DIR && \
 EXPOSE 8000
 EXPOSE 80
 
+WORKDIR /opt/bamboo
 CMD ["--help"]
 ENTRYPOINT ["/opt/bamboo/bamboo"]
