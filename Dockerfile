@@ -10,7 +10,8 @@ ENV GOPATH /opt/go
 RUN echo "deb http://cdn.debian.net/debian wheezy-backports main" > /etc/apt/sources.list.d/backports.list && \
     apt-get update && \
     apt-get install -y git bzr mercurial \
-                       golang \                     
+                       golang \
+                       curl \
                        haproxy -t wheezy-backports && \
     mkdir -p /run/haproxy
 
