@@ -1,5 +1,5 @@
-FROM thefactory/base
-MAINTAINER Mike Babineau mike@thefactory.com
+FROM debian:7.8
+MAINTAINER Mike Babineau michael.babineau@gmail.com
 
 ENV BAMBOO_RELEASE https://github.com/QubitProducts/bamboo/archive/v0.2.4.tar.gz
 ENV BAMBOO_SRC_DIR /opt/go/src/github.com/QubitProducts/bamboo
@@ -11,7 +11,8 @@ RUN echo "deb http://cdn.debian.net/debian wheezy-backports main" > /etc/apt/sou
     apt-get update && \
     apt-get install -y git bzr mercurial \
                        golang \                     
-                       haproxy -t wheezy-backports
+                       haproxy -t wheezy-backports && \
+    mkdir -p /run/haproxy
 
 # Use apt-provided go to bootstrap the installation of a newer version
 RUN go get launchpad.net/godeb && \

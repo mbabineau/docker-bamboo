@@ -1,8 +1,8 @@
 Runs a (Mesos/Marathon) [Bamboo](https://github.com/QubitProducts/bamboo/) instance.
 
-Available on the Docker Hub as [thefactory/bamboo](https://registry.hub.docker.com/u/thefactory/bamboo/):
+Available on the Docker Hub as [mbabineau/bamboo](https://registry.hub.docker.com/u/mbabineau/bamboo/):
 
-    docker pull thefactory/bamboo
+    docker pull mbabineau/bamboo
 
 ### Versions
 * Bamboo 0.2.4
@@ -17,7 +17,7 @@ Starting the container:
         -e BAMBOO_ENDPOINT=<bamboo_endpoint> \
         -e BAMBOO_ZK_HOST=<zk_connect_string> \
         -e BAMBOO_ZK_PATH=/bamboo \
-        thefactory/bamboo \
+        mbabineau/bamboo \
             -bind=":8000"
 
 
