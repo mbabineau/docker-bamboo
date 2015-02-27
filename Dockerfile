@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV GOPATH /opt/go
 
 # Install dependencies
-RUN echo "deb http://cdn.debian.net/debian wheezy-backports main" > /etc/apt/sources.list.d/backports.list \
+RUN echo "deb http://http.debian.net/debian wheezy-backports main" > /etc/apt/sources.list.d/backports.list \
     && apt-get update \
     && apt-get install -y git bzr mercurial \
                        golang \
