@@ -1,7 +1,7 @@
 FROM debian:7.8
 MAINTAINER Mike Babineau michael.babineau@gmail.com
 
-ENV BAMBOO_RELEASE https://github.com/QubitProducts/bamboo/archive/v0.2.4.tar.gz
+ENV BAMBOO_RELEASE https://github.com/QubitProducts/bamboo/archive/v0.2.9.tar.gz
 ENV BAMBOO_SRC_DIR /opt/go/src/github.com/QubitProducts/bamboo
 ENV DEBIAN_FRONTEND noninteractive
 ENV GOPATH /opt/go

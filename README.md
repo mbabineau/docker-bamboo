@@ -5,7 +5,7 @@ Available on the Docker Hub as [mbabineau/bamboo](https://registry.hub.docker.co
     docker pull mbabineau/bamboo
 
 ### Versions
-* Bamboo 0.2.4
+* Bamboo 0.2.9
 
 ### Usage
 Starting the container:
